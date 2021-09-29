@@ -1,0 +1,33 @@
+USE rotmgprod;
+
+CREATE TABLE accounts (
+id BIGINT NOT NULL,
+uuid VARCHAR(128) NOT NULL,
+password VARCHAR(256) NOT NULL,
+name VARCHAR(64) NOT NULL,
+rank INT NOT NULL, 
+namechosen TINYINT NOT NULL,
+verified TINYINT NOT NULL,
+guild INT NOT NULL,
+guildRank INT NOT NULL,
+guildFame INT NOT NULL,
+lastip VARCHAR(128) NOT NULL,
+vaultCount INT NOT NULL,
+regTime datetime NOT NULL,
+guest TINYINT NOT NULL,
+banned TINYINT NOT NULL,
+publicMuledump INT NOT NULL,
+muted TINYINT NOT NULL, 
+prodAcc TINYINT NOT NULL,
+locked VARCHAR(512) NOT NULL,
+ignored VARCHAR(512) NOT NULL,
+gifts VARCHAR(1000) NOT NULL,
+isAgeVerified TINYINT NOT NULL,
+petYardType INT NOT NULL,
+ownedSkins VARCHAR(2048) NOT NULL,
+authToken VARCHAR(128) NOT NULL,
+acceptedNewTos TINYINT NOT NULL,
+lastSeen datetime NOT NULL,
+accountInUse TINYINT NOT NULL,
+PRIMARY KEY(id, uuid, guild, lastip, banned)
+)
