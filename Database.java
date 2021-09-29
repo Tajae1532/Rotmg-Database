@@ -5,7 +5,6 @@ import db.data;
 import java.sql.Connection;
 import MySql.Data.MySqlClient;
 import java.sql.*;
-yes
 import java.util.List;
 import java.lang.String;
 import java.util.ArrayList;
