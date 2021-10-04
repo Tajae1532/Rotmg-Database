@@ -12,5 +12,18 @@ public class NWriter extends BinaryWriter {
 	public void Write(short value) {
 		super.Write(IPAddress.HostToNetworkOrder(value));
 	}
+	
+	public void Write(int value) {
+		super.Write(IPAddress.HostToNetworkOrder(value));
+	}
+	
+	public void Write(long value) {
+		super.Write(IPAddress.HostToNetworkOrder(value));
+	}
+	
+	public void Write(System.UInt16 value) {
+		super.Write(((System.UInt16)))
+		
+	}
 
 }
